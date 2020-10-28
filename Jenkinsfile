@@ -18,7 +18,7 @@ pipeline {
         }
         
             
-        }
+        
         stage ('Build'){
             steps {
                 echo 'Compilando y Build'
