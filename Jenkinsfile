@@ -19,7 +19,7 @@ pipeline {
         
             
         
-        stage ('Buildeando'){
+        stage ('Build'){
             steps {
                 echo 'Compilando y Build'
                 sh 'go build -o poster post.go'
