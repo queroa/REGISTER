@@ -6,7 +6,7 @@ pipeline {
         
     }
     stages {
-        stage ('Install dependencies'){
+        stage ('Installing dependencies'){
             steps {
                 echo 'Instalando dependencias'
                 sh 'go version'
