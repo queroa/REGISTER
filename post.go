@@ -80,6 +80,7 @@ func endpointFunc2JSONInput(w http.ResponseWriter, r *http.Request) {
 
 	//		fmt.Println("Conectado e insertado.")
 	//fmt.Fprintln(w, string(b))
+	w.Header().Set("Content-Type", "application/json")
 	w.Write(b)
 
 }
