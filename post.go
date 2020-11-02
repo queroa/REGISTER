@@ -79,7 +79,7 @@ func endpointFunc2JSONInput(w http.ResponseWriter, r *http.Request) {
 	b, err := json.Marshal(coche)
 
 	//		fmt.Println("Conectado e insertado.")
-	fmt.Fprintln(w, string(b))
+	fmt.Fprintln(w, b)
 
 }
 
