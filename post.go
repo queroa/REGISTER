@@ -42,7 +42,7 @@ func initialize() {
 func endpointFunc2JSONInput(w http.ResponseWriter, r *http.Request) {
 	var coche Coche
 
-	body, err := ioutil.ReadAll(io.LimitReader(r.Body, 1048576))
+	body, err := ioutil.ReadAll(io.LimitReader(r.Body, 100))
 	if err != nil {
 		panic(err)
 	}
