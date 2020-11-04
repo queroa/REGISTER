@@ -76,12 +76,13 @@ func endpointFunc2JSONInput(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	b, err := json.Marshal(coche)
+	//b, err := json.Marshal(coche)
 
 	//		fmt.Println("Conectado e insertado.")
 	//fmt.Fprintln(w, string(b))
-	w.Header().Set("Content-Type", "application/json")
-	w.Write(b)
+	//w.Header().Set("Content-Type", "application/json")
+	//w.Write(b)
+	fmt.Fprintln(w, string("Tu petición ha sido registrada con ID ="), coche.Id)
 
 }
 
