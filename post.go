@@ -82,7 +82,7 @@ func endpointFunc2JSONInput(w http.ResponseWriter, r *http.Request) {
 	//fmt.Fprintln(w, string(b))
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(b)
-	//fmt.Fprintln(w, string("Tu peticion ha sido registrada con ID ="), coche.Id)
+	//fmt.Fprintln(w, string("Tu peticioon ha sido registrada con ID ="), coche.Id)
 
 }
 
