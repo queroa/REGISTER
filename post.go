@@ -23,7 +23,7 @@ type Coche struct {
 
 func handleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
-	myRouter.HandleFunc("/service/v1/cars/blablabla", endpointFunc2JSONInput).Methods("POST")
+	myRouter.HandleFunc("/service/v1/cars", endpointFunc2JSONInput).Methods("POST")
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
 
 }
